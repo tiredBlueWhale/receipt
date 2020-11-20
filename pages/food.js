@@ -11,7 +11,8 @@ let sortValues = ["Newest", "Oldest", "A-Z", "Z-A"]
 
 export const Food = {
     async init() {
-        let url = location.hash.slice(2).toLowerCase();
+        // let url = location.hash.slice(2).toLowerCase();
+        let url = location.search.slice(1) || '/';
         if (url === 'appetizer') {
             data = appetizers;
         } else if (url === 'deserts') {
