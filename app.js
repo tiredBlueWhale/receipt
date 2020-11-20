@@ -10,9 +10,9 @@ import { Info } from './pages/info.js';
 
 const routes = {
     '/': Info,
-    '/appetizer': Food,
-    '/meals': Food,
-    '/deserts': Food,
+    '?appetizer': Food,
+    '?meals': Food,
+    '?deserts': Food,
 };
 
 const banner = null || document.getElementById('banner_container');
@@ -27,8 +27,12 @@ const router = async () => {
     banner.innerHTML = await Banner.render();
     navbar.innerHTML = await NavBar.render();
 
-    let url = location.hash.slice(1).toLowerCase() || '/';
-    // console.log(url);
+
+    // let url = location.hash.slice(1).toLowerCase() || '/';
+    let url = location.search || '/';
+    console.log(location);
+    console.log(location.search);
+
     
     activePage = routes[url] ? routes[url] : Error;
     await activePage.init();

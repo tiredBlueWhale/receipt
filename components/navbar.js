@@ -3,10 +3,10 @@ export const NavBar = {
         let view =
         `
         <nav>
-            <a href="/#/">Info</a>
-            <a href="/#/appetizer">Appetizer</a>
-            <a href="/#/meals">Meals</a>
-            <a href="/#/deserts">Deserts</a>
+            <a href="/">Info</a>
+            <a href="/?appetizer">Appetizer</a>
+            <a href="/?meals">Meals</a>
+            <a href="/?deserts">Deserts</a>
         </nav>
         `
             ;
