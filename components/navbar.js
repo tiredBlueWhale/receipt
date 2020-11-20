@@ -4,9 +4,9 @@ export const NavBar = {
         `
         <nav>
             <a href="/">Info</a>
-            <a href="/?appetizer">Appetizer</a>
-            <a href="/?meals">Meals</a>
-            <a href="/?deserts">Deserts</a>
+            <a href=".?appetizer">Appetizer</a>
+            <a href="./?meals">Meals</a>
+            <a href="/receipt/?deserts">Deserts</a>
         </nav>
         `
             ;
