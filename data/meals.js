@@ -7,7 +7,29 @@ import { Receipt, Ingredient } from './../models/receipt.js'
 */
 
 export const meals =
-    [   
+    [    new Receipt(
+            "Ramen",
+            [
+                "assets/banner_test.jpg"
+            ],
+            [
+                [ 
+                    new Ingredient("177ml", "Water"),
+                    new Ingredient("1", "Kombu"),
+                    new Ingredient("1", "Dried shiitake mushroom"),
+                ],
+                [
+                    new Ingredient("Amountg", "Ingredient3"),
+                    new Ingredient("Amountl", "Ingredient4"),
+                ]
+            ],
+            [
+                "To Make Vegetarian Dashi (Kombu + Shiitake) Soak the kombu and dried shiitake mushroom in ¾ cup water for at least 30 minutes. Transfer the liquid into a small saucepan, including kombu and shiitake mushroom. Slowly bring the liquid to a boil over low heat. This will help enhance the dashi flavor.", 
+                "Step 2",
+            ],
+            new Date(2019, 1, 1),
+            "https://www.justonecookbook.com/vegetarian-ramen/"
+        ),
         new Receipt(
             "AFood 2",
             [
