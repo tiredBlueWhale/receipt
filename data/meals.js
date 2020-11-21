@@ -1,7 +1,57 @@
 import { Receipt, Ingredient } from './../models/receipt.js'
 
+/*
+*   1. Copy the last Receipt and insert between ),  <insert> new Receipt
+*   2. Change fields
+*   3. Commit changes on bottom of page
+*/
+
 export const meals =
-    [
+    [    new Receipt(
+            "Ramen",
+            [
+                "assets/banner_test.jpg"
+            ],
+            [
+                [ 
+                    new Ingredient("177ml", "Water"),
+                    new Ingredient("1", "Kombu"),
+                    new Ingredient("1", "Dried shiitake mushroom"),
+                ],
+                [
+                    new Ingredient("Amountg", "Ingredient3"),
+                    new Ingredient("Amountl", "Ingredient4"),
+                ]
+            ],
+            [
+                "To Make Vegetarian Dashi (Kombu + Shiitake) Soak the kombu and dried shiitake mushroom in ¾ cup water for at least 30 minutes. Transfer the liquid into a small saucepan, including kombu and shiitake mushroom. Slowly bring the liquid to a boil over low heat. This will help enhance the dashi flavor.", 
+                "Step 2",
+            ],
+            new Date(2019, 1, 1),
+            "https://www.justonecookbook.com/vegetarian-ramen/"
+        ),
+        new Receipt(
+            "AFood 2",
+            [
+                "assets/banner_test.jpg"
+            ],
+            [
+                [
+                    new Ingredient(3, "Eggs"),
+                    new Ingredient(2, "Flour"),
+                ],
+                [
+                    new Ingredient(1, "Eggsss"),
+                    new Ingredient(4, "Flour"),
+                ]
+            ],
+            [
+                "ahdfhawfeoh",
+                
+            ],
+            new Date(2020, 11, 18),
+            null
+        ),
         new Receipt(
             "xyz 1",
             // [
@@ -99,5 +149,29 @@ export const meals =
             ],
             new Date(2020, 11, 18),
             null
-        )
+        ),
+        // START::COPY
+        new Receipt(
+            "Receipt Name",
+            [
+                "assets/banner_test.jpg"
+            ],
+            [
+                [
+                    new Ingredient("Amount", "Ingredient1"),
+                    new Ingredient("Amount", "Ingredient2"),
+                ],
+                [
+                    new Ingredient("Amountg", "Ingredient3"),
+                    new Ingredient("Amountl", "Ingredient4"),
+                ]
+            ],
+            [
+                "Step 1",
+                "Step 2",
+            ],
+            new Date(2019, 1, 1),
+            "https://www.google.com"
+        ),
+        // END::COPY
     ]
